@@ -1,0 +1,48 @@
+package game;
+public abstract class Movements 
+{
+    public abstract void moveup();
+    public abstract void movedown();
+    public abstract void moveleft();
+    public abstract void moveright();
+}
+
+package game;
+public class NewPlayer extends Movements
+{
+    @Override
+        public void moveup()
+        {
+            System.out.println("Player moved up");
+        }
+    @Override
+public void movedown() 
+{
+   System.out.println("Player moved down"); 
+}
+ @Override
+public void moveleft() 
+{
+   System.out.println("Player moved left"); 
+}
+ @Override
+public void moveright() 
+{
+   System.out.println("Player moved right"); 
+}
+}
+
+package game;
+public class Game 
+{
+    public static void main(String[] args)
+    {
+        NewPlayer n=new NewPlayer();
+        n.moveup();
+        n.movedown();
+        n.moveleft();
+        n.moveright();
+         
+    }
+    
+}
